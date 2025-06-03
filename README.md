@@ -10,7 +10,9 @@ This is a 2D grid-based adventure game where players can:
 
 ## Postman API Documents 
 
-```https://documenter.getpostman.com/view/32714719/2sB2qi7cxH```
+```bash 
+https://documenter.getpostman.com/view/32714719/2sB2qi7cxH
+```
 
 # 2D Game State Management System
 
