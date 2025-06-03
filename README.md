@@ -1,3 +1,20 @@
+# Game State Management System
+
+## Quick Overview
+This is a 2D grid-based adventure game where players can:
+- Move around a grid-based world
+- Collect items like coins, health packs, and keys
+- Interact with environment objects (doors, chests, switches)
+- Manage inventory and use items
+- Save and load game progress
+
+The game features:
+- Grid-based movement with adjacency rules
+- Item collection and inventory management
+- Environment interactions (doors, chests, switches, teleporters)
+- State persistence with save/load functionality
+- RESTful API for game state management
+
 # 2D Game State Management System
 
 A robust system for managing the state of a simple 2D game, focusing on state representation, transitions, and persistence.
