@@ -8,13 +8,6 @@ This is a 2D grid-based adventure game where players can:
 - Manage inventory and use items
 - Save and load game progress
 
-The game features:
-- Grid-based movement with adjacency rules
-- Item collection and inventory management
-- Environment interactions (doors, chests, switches, teleporters)
-- State persistence with save/load functionality
-- RESTful API for game state management
-
 # 2D Game State Management System
 
 A robust system for managing the state of a simple 2D game, focusing on state representation, transitions, and persistence.
@@ -25,7 +18,6 @@ A robust system for managing the state of a simple 2D game, focusing on state re
 - Item system with pickup and usage mechanics
 - Environment interaction (doors, switches, chests)
 - State persistence with save/load functionality
-- Input validation and error handling
 - Security middleware (rate limiting, CORS, helmet)
 
 ## Project Structure
@@ -37,9 +29,9 @@ A robust system for managing the state of a simple 2D game, focusing on state re
 │   ├── routes/         # API routes
 │   ├── services/       # Business logic
 │   └── utils/          # Helper functions
+|   └── middleware      # middleware functions
 ├── data/              # Game state data
 ├── config/            # Configuration files
-└── tests/             # Test files
 ```
 
 ## Setup
@@ -140,7 +132,6 @@ The system is designed to be easily extensible:
 1. State Representation:
    - Chose JSON for its simplicity and flexibility
    - Considered using a database but opted for file-based storage for simplicity
-   - Could have used binary format for performance but prioritized readability
 
 2. Code Organization:
    - MVC pattern for clear separation of concerns
@@ -171,31 +162,3 @@ The system is designed to be easily extensible:
    - Could implement partial state loading
    - Need to consider memory usage for large games
 
-### AI Assistance
-
-This project was developed with the assistance of AI tools:
-- Used AI for initial project structure
-- Used AI for code review and suggestions
-- Used AI for documentation generation
-- All AI-generated code was reviewed and modified
-
-## Future Improvements
-
-1. Testing:
-   - Add unit tests
-   - Add integration tests
-   - Add performance tests
-
-2. Documentation:
-   - Add API documentation
-   - Add code comments
-   - Add usage examples
-
-3. Features:
-   - Add multiplayer support
-   - Add state compression
-   - Add state versioning
-
-## License
-
-MIT
