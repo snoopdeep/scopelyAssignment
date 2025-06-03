@@ -5,10 +5,6 @@
 http://localhost:3000/api
 ```
 
-## Rate Limiting
-- 100 requests per 15 minutes per IP address
-- Rate limit headers are included in responses
-
 ## Endpoints
 
 ### Player Actions
@@ -74,7 +70,7 @@ POST /player/pickup/:itemId
 Pick up an item at the player's current position.
 
 **Parameters:**
-- `itemId` (path): ID of the item to pick up
+- `itemId` : ID of the item to pick up
 
 **Response:**
 ```json
@@ -101,7 +97,7 @@ POST /player/use/:itemId
 Use an item from the player's inventory.
 
 **Parameters:**
-- `itemId` (path): ID of the item to use
+- `itemId` : ID of the item to use
 
 **Response:**
 ```json
@@ -126,7 +122,7 @@ POST /player/drop/:itemId
 Drop an item from inventory at current position.
 
 **Parameters:**
-- `itemId` (path): ID of the item to drop
+- `itemId` : ID of the item to drop
 
 **Request Body:**
 ```json
@@ -182,7 +178,7 @@ POST /environment/interact/:objectId
 Interact with an environment object (door, switch, chest, etc.).
 
 **Parameters:**
-- `objectId` (path): ID of the environment object
+- `objectId` : ID of the environment object
 
 **Request Body:**
 ```json

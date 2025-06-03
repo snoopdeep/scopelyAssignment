@@ -1,0 +1,195 @@
+{
+  "player": {
+    "id": "player1",
+    "position": {
+      "x": 0,
+      "y": 1
+    },
+    "health": 100,
+    "maxHealth": 100,
+    "level": 1,
+    "experience": 0,
+    "inventory": [],
+    "coins": 0,
+    "status": "normal"
+  },
+  "items": {
+    "item_01": {
+      "id": "item_01",
+      "type": "coin",
+      "position": {
+        "x": 2,
+        "y": 5
+      },
+      "pickedUp": false,
+      "value": 10,
+      "properties": {}
+    },
+    "item_02": {
+      "id": "item_02",
+      "type": "healthPack",
+      "position": {
+        "x": 7,
+        "y": 3
+      },
+      "pickedUp": false,
+      "value": 25,
+      "properties": {
+        "healAmount": 25
+      }
+    },
+    "item_03": {
+      "id": "item_03",
+      "type": "powerUp",
+      "position": {
+        "x": 1,
+        "y": 8
+      },
+      "pickedUp": false,
+      "value": 0,
+      "properties": {
+        "effect": "speedBoost",
+        "duration": 30000
+      }
+    },
+    "item_04": {
+      "id": "item_04",
+      "type": "key",
+      "position": {
+        "x": 9,
+        "y": 1
+      },
+      "pickedUp": false,
+      "value": 0,
+      "properties": {
+        "unlocks": "door_01"
+      }
+    },
+    "item_05": {
+      "id": "item_05",
+      "type": "key",
+      "position": {
+        "x": 5,
+        "y": 5
+      },
+      "pickedUp": false,
+      "value": 0,
+      "properties": {
+        "unlocks": "chest_01"
+      }
+    },
+    "item_10": {
+      "id": "item_10",
+      "type": "coin",
+      "position": null,
+      "pickedUp": false,
+      "value": 15,
+      "properties": {}
+    },
+    "item_11": {
+      "id": "item_11",
+      "type": "healthPack",
+      "position": null,
+      "pickedUp": false,
+      "value": 30,
+      "properties": {
+        "healAmount": 30
+      }
+    }
+  },
+  "environment": {
+    "door_01": {
+      "id": "door_01",
+      "type": "door",
+      "position": {
+        "x": 4,
+        "y": 4
+      },
+      "state": "closed",
+      "properties": {
+        "requiresKey": "item_04",
+        "blocksMovement": true
+      }
+    },
+    "door_02": {
+      "id": "door_02",
+      "type": "door",
+      "position": {
+        "x": 8,
+        "y": 8
+      },
+      "state": "open",
+      "properties": {
+        "requiresKey": null,
+        "blocksMovement": false
+      }
+    },
+    "switch_01": {
+      "id": "switch_01",
+      "type": "switch",
+      "position": {
+        "x": 4,
+        "y": 5
+      },
+      "state": "off",
+      "properties": {
+        "controls": "door_02",
+        "toggleable": true
+      }
+    },
+    "chest_01": {
+      "id": "chest_01",
+      "type": "chest",
+      "position": {
+        "x": 6,
+        "y": 7
+      },
+      "state": "closed",
+      "properties": {
+        "contains": [
+          "item_10",
+          "item_11"
+        ],
+        "requiresKey": "item_05"
+      }
+    },
+    "teleporter_01": {
+      "id": "teleporter_01",
+      "type": "teleporter",
+      "position": {
+        "x": 0,
+        "y": 9
+      },
+      "state": "active",
+      "properties": {
+        "destination": {
+          "x": 9,
+          "y": 0
+        },
+        "cost": 5
+      }
+    },
+    "wall_01": {
+      "id": "wall_01",
+      "type": "wall",
+      "position": {
+        "x": 3,
+        "y": 3
+      },
+      "state": "solid",
+      "properties": {
+        "blocksMovement": true
+      }
+    }
+  },
+  "metadata": {
+    "gameId": "game_12345",
+    "gridWidth": 10,
+    "gridHeight": 10,
+    "timestamp": "2025-06-03T08:40:25.894Z",
+    "version": "1.0.0",
+    "playTime": 0,
+    "actionsCount": 1,
+    "lastAction": "Moved to (0, 1)"
+  }
+}
